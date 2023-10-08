@@ -9,7 +9,7 @@ class Cast {
         double rate = 0.1;
         int discount, amount;
 
-        if(price >= 3000){
+        if(price >= 3000) {
             discount = 300;
         } else if( price >= 5000) {
             discount = 500;
