@@ -1,15 +1,14 @@
-//オーバーロードを実践してみる
-//Pythonみたいにデフォルト引数がないので、それぞれの引数の組に応じて関数を作っておくイメージ？
-
-class Student2 {
+class Student3 {
     String name;
     int engScore;
     int mathScore;
 
-    void setData(String n){
+    //コンストラクタを使ってみる
+    //メソッドの頭文字は小文字で書くことが一般的だが、コンストラクタの場合クラス名と同じにする必要があるので、クラス名同様に大文字にする
+    Student3(String n){
         name = n;
     }
-    void setData(String n, int e, int m){
+    Student3(String n, int e, int m){
         name = n;
         engScore = e;
         mathScore = m;
@@ -22,4 +21,5 @@ class Student2 {
         System.out.println(name + "さん");
         System.out.println("英語" + engScore + "点, 数学" + mathScore + "点");
     }
+
 }
