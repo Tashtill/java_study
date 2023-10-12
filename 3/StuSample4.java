@@ -5,8 +5,10 @@ class StuSample4 {
 
         Student4 stu1 = new Student4("村山");
         Student4.display();
+        stu1.displayName();
 
         Student4 stu2 = new Student4("中村");
         Student4.display();
+        stu2.displayName();
     }
 }

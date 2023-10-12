@@ -10,4 +10,8 @@ class Student4 {
     static void display(){
         System.out.println(counter + "人です");
     }
+
+    void displayName(){
+        System.out.println(name);
+    }
 }
