@@ -1,3 +1,4 @@
+//カプセル化を使ってみる
 public class Student5 {
     private String name;
     private int score;

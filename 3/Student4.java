@@ -1,3 +1,5 @@
+//Static変数とメソッドを使ってみる
+
 class Student4 {
     String name;
     static int counter = 0;
