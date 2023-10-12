@@ -1,9 +1,5 @@
-public class Student5 extends Person {
+public class Student6 extends Person {
     private int stuNo;
-
-    public Student5(){
-        super();
-    }
 
     public void setStuNo(int n){
         stuNo = n;
