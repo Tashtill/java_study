@@ -2,7 +2,7 @@ public final class Student_ch4 extends Person_ch4 {
     private int stuNo;
 
     public Student_ch4(String name, int stuNo){
-        super(name);
+        super(name); // super()やthis()はコンストラクタの先頭に書く。これがないとコンパイル時にsuper();が先頭に勝手に挿入される。
         this.stuNo = stuNo;
     }
 
