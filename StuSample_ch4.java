@@ -1,6 +1,6 @@
-public class StuSample6 {
+public class StuSample_ch4 {
     public static void main(String[] args){
-        Student6 stu = new Student6();
+        Student_ch4 stu = new Student_ch4();
 
         //スーパークラスのメソッド
         stu.setName("菅原");
@@ -8,6 +8,6 @@ public class StuSample6 {
 
         //サブクラスのメソッド
         stu.setStuNo(1);
-        stu.displayStuNo();
+        stu.display();
     }
 }
