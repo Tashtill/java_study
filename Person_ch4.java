@@ -1,9 +1,10 @@
 public class Person_ch4{
     private String name;
 
-    public void setName(String n){
-        name = n;        
+    public Person_ch4(String name){
+        this.name = name;
     }
+
     public String getName(){
         return name;
     }
