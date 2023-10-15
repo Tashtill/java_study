@@ -5,12 +5,19 @@ public class StuSample_ch4 {
         Student_ch4 stu1 = new Student_ch4("菅原", BASE_NO+1);
         Student_ch4 stu2 = new Student_ch4("宮下", BASE_NO+2);
 
-        //スーパークラスのメソッド
-        // stu.setName("菅原");
-        stu1.display();
+        Person_ch4 psn = stu1; //サブクラスのオブジェクトをスーパークラスに代入。必要なメモリ領域は増加しないので型変換は自動で行われる。
+        psn.display();
 
-        //サブクラスのメソッド
-        //stu2.setStuNo(1);
-        stu2.display();
+        //psn.chgStuNo(500); //chgStuNo()はサブクラスのメソッド。psnはスーパークラスなのでこのメソッドは使えない
+
+        if (psn instanceof Student_ch4){
+            Student_ch4 stu3 = (Student_ch4)psn;
+            stu3.chgStuNo(2001);
+            stu3.display(); 
+        }
+        
+        System.out.println(psn instanceof Student_ch4);
+        System.out.println(psn instanceof Person_ch4);
+
     }
 }

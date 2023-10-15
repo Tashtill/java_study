@@ -6,8 +6,8 @@ public final class Student_ch4 extends Person_ch4 {
         this.stuNo = stuNo;
     }
 
-    public void setStuNo(int num){
-        stuNo = num;
+    public void chgStuNo(int stuNo){
+        this.stuNo = stuNo;
     }
     public int getNo(){
         return stuNo;
@@ -15,6 +15,8 @@ public final class Student_ch4 extends Person_ch4 {
     public void display(){ //Person_ch4にあるdisplayメソッドをオーバーライドした
         super.display(); //スーパークラス中のdisplayメソッドを呼び出す。オーバーライドした場合に同じ処理を書かなくて済む
         System.out.println("学籍番号 : " + stuNo);
+        System.out.println("学籍番号の表示はサブクラスStudent_ch4のメソッド");
+
         //System.out.println("学籍番号の表示はサブクラスで再定義");
     }
 }
